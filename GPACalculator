@@ -1,0 +1,21 @@
+#!/bin/sh
+
+while getopts ":[Aa][Bb][Cc][Dd][Ff]" opt; do
+    case $opt in
+        [Aa])
+          echo "GPA: 4.0">&2
+          ;;
+        [Bb])
+          echo "GPA: 3.0">&2
+          ;;
+        [Cc])
+          echo "GPA: 2.0">&2
+          ;;
+        [Dd])
+          echo "GPA: 1.0">&2
+          ;;
+        [Ff])
+          echo "GPA: 0.0">&2
+          ;;
+    esac
+done
